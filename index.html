@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            My main family
+        </title>
+        
+    </head>
+    <body>
+        <center>
+        <h1 id="Title"> My Family tree </h1>
+        <h3 id="names"></h3> 
+        <img id="picture" src="Daddy.jpg">     
+        <br>           
+        <button type="button" onclick=move_on id="move_button"> Move to the Next </button>
+        <script>
+           
+            var my_family_name=["Mukund Kudrimoti", "Manjiri Kudrimoti", "Mohit Kudrimoti"];
+            console.log(my_family_name);
+            document.getElementById("names").innerHTML=my_family_name[0];
+
+            function move_on(){
+                for (i=1; i<my_family_name.length; i++){
+                    console.log(i);
+                    document.getElementById("names").innerHTML=my_family_name[i];
+                    if (i=my_family_name.length); {
+                        i=0;
+                        console.log(i);
+                    }
+                }
+                for (i=1; i<my_family_name.length; i++){
+                    console.log(i);
+                    document.getElementById("picture").innerHTML=my_family_name[i];
+                    if (i=my_family_name.length); {
+                        i=0;
+                        console.log(i);
+                    }
+                }
+            }
+
+        </script>
+        </center>
+    </body>
+</html>
